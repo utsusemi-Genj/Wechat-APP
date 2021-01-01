@@ -1,0 +1,24 @@
+.one-text{
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+}
+.scroll-one-text{
+  margin-bottom: 20rpx;
+  margin-left: 20rpx;
+  font-size: 30rpx;
+  vertical-align: middle;
+  margin-right: -2000rpx;   
+  display: inline-block;
+}
+
+.one-scroll{
+  width: 250rpx;
+  box-sizing: border-box;
+}
+.one{
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

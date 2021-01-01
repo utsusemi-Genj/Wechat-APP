@@ -1,0 +1,17 @@
+/* pages/page3/page3.wxss */
+
+@import "../page1/song-tpl/one-tpl.wxss";
+.bottom{
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 40rpx 40rpx 0 0;
+  padding-top: 50rpx;
+  padding-left: 50rpx;
+}
+.bofang{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  top:900rpx;
+  right: 30rpx;
+}

@@ -1,0 +1,35 @@
+<!--pages/page1/paihang/paihang.wxml-->
+<import src="../song-tpl/one-tpl.wxml"></import>
+<view>
+  <view>
+    <image src="{{allMusie.coverImgUrl}}" class="mohu"></image>
+    <image src="{{allMusie.coverImgUrl}}"></image>
+  </view>
+  <view class="top-neirong">
+    <view>
+      <image src="{{allMusie.coverImgUrl}}" class="top-PHBpic"></image>
+    </view>
+    <view class="top-xiangxi">
+      <view class="top-xiangxi-paihangbangname">
+        <text class="top-xiangxi-text" >{{allMusie.paihangbangname}}</text>
+      </view>
+      <view class="loge">
+        <image src="/image/loge.png" class="loge-img"></image>
+        <text class="loge-text">网易云音乐</text>
+      </view>
+      <view class="jianjie">
+        <text class="jianjie-text">{{allMusie.description}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom">
+  <block wx:for="{{allMusie.musices}}" wx:for-item="item" wx:for-index="idx">
+      <template is="songTpl" data="{{...item}}" ></template>
+  </block>
+</view>
+<view >
+    <image class="bofang" src="/image/tpl/boufang.png" wx:if="{{xs}}" catchtap="onBofang"></image>
+    <image class="bofang" src="/image/tpl/zanting.png" wx:if="{{!xs}}" catchtap="onBofang"></image>
+</view>

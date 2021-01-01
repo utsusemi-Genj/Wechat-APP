@@ -1,0 +1,13 @@
+@import "../one-tpl/one-tpl.wxss";
+.kuai{
+  height: 200rpx;
+  display: flex;
+  flex-flow : row;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  margin-bottom: 50rpx;
+}
+.top-image{
+  width: 200rpx;
+  height: 200rpx;
+}

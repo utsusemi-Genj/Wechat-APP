@@ -1,0 +1,41 @@
+/* pages/page2/page2.wxss */
+@import "../page1/song-tpl/one-tpl.wxss";
+page{
+  height: 100%;
+}
+.search {
+  background-color: #f2f2f2;
+  height: 80rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position:fixed;
+  align-items: center;
+  top: 0;
+  z-index:999;
+}
+.search-img {
+  margin: auto 0 auto 20rpx;
+  margin-right: 20rpx;
+}
+.placeholder {
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-left: 20rpx;
+}
+.bottom{
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 40rpx 40rpx 0 0;
+  position: absolute;
+  top:80rpx;
+  padding-top: 50rpx;
+  padding-left: 50rpx;
+}
+.bofang{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  top:900rpx;
+  right: 30rpx;
+}

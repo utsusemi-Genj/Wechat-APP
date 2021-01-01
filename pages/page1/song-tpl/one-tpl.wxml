@@ -1,0 +1,17 @@
+<template name="songTpl">
+  <view class="bottom-neirong" catchtap="onSong" data-songId="{{songid}}">
+    <view>
+      <text>{{number}}</text>
+    </view> 
+    <view class="bottom-neirong-song">
+      <scroll-view class="one-scroll" enable-flex='true' scroll-x="true">
+          <text class="scroll-one-text">{{songname}}</text>
+      </scroll-view>
+      <text class="bottom-neirong-song-er">{{songer}}</text>
+    </view>
+    <view class="Soucang-img">
+        <image class="Soucang" src="/image/tpl/weishoucang.png" wx:if="{{SoucangXS}}"  catchtap="onSoucang" data-songId="{{songid}}"></image>
+        <image class="Soucang" src="/image/tpl/yishoucang.png"  wx:if="{{!SoucangXS}}"  catchtap="onSoucang" data-songId="{{songid}}"></image>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,10 @@
+<!--pages/welcome/welcome.wxml-->
+<view class="container">
+  <image class="avatar" src="/image/loge.png"/>
+  <text class="motto-1">网易云</text>
+  <text class="motto-2">让生活充满音乐</text>
+
+  <view catchtap="onTapJump" class="journey-container">
+    <text class="journey">点击进入</text>
+  </view>
+</view>

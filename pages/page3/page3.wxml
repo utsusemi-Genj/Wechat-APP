@@ -1,0 +1,14 @@
+<!--pages/page3/page3.wxml-->
+<import src="../page1/song-tpl/one-tpl.wxml"></import>
+<view>下拉刷新更新列表</view>
+<view catchtap="onhuiyuan">你还{{huiyuan}}黑胶会员</view>
+<view class="bottom">
+  <block wx:for="{{musices}}" wx:for-item="item" wx:for-index="idx">
+      <template is="songTpl" data="{{...item}}" ></template>
+  </block>
+</view>
+
+<view >
+    <image class="bofang" src="/image/tpl/boufang.png" wx:if="{{xs}}" catchtap="onBofang"></image>
+    <image class="bofang" src="/image/tpl/zanting.png" wx:if="{{!xs}}" catchtap="onBofang"></image>
+</view>

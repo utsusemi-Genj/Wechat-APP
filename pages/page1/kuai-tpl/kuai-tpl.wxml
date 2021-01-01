@@ -1,0 +1,11 @@
+<import src="../one-tpl/one-tpl.wxml"></import>
+<template name="kuaiTpl">
+  <view class="kuai" catchtap="onpaihang" data-detail="{{detail}}">
+    <image src="{{coverImgUrl}}" class="top-image" ></image>
+    <view class="kuai-nei">  
+      <block wx:for="{{musices}}" wx:for-item="item" wx:for-index="idx">
+        <template is="oneTpl" data="{{...item}}" ></template>
+      </block>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,17 @@
+/* pages/page1/page1.wxss */
+@import "../page1/kuai-tpl/kuai-tpl.wxss";
+@import "../page1/one-tpl/one-tpl.wxss";
+page{
+  height: 100%;
+}
+.swiperimg{
+  width: 100%;
+  height: 40%;
+}
+.bofang{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  top:900rpx;
+  right: 30rpx;
+}

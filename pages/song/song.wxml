@@ -1,0 +1,28 @@
+<!--pages/song/song.wxml-->
+<view class="all">
+  <view >
+    <image src="{{music.picUrl}}" class="gepic"></image>
+  </view>
+  <view >
+    <image class="bofang" src="/image/tpl/boufang.png" wx:if="{{xs}}" catchtap="onBofang"></image>
+    <image class="bofang" src="/image/tpl/zanting.png" wx:if="{{!xs}}" catchtap="onBofang"></image>
+  </view>
+  <view class="xinxi">
+    <view class="xinxi-zhuanji">
+      <text>专辑：</text>
+      <text>{{music.zhuangji}}</text>
+    </view>
+    <view class="xinxi-geshoude">
+      <text>歌手:</text>
+      <block wx:for="{{music.songer}}" wx:for-item="item" wx:for-index="idx">
+        <text class="xinxi-geshou">{{item}}</text>
+      </block>
+    </view>
+    <view class="button-huchu" catchtap="ongecidexs">查看字幕</view>
+  </view>
+  <view class="geci" wx:if="{{gecidexs}}" catchtap="ongecidexs">
+    <text>歌词</text>
+    <text class="geci-text">{{geci}}</text>
+  </view>
+</view>
+<audio src="{{singUrl}}" id="myAudio"></audio>

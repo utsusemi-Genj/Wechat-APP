@@ -1,0 +1,22 @@
+<!--pages/page1/page1.wxml-->
+<import src="../page1/one-tpl/one-tpl.wxml"></import>
+<import src="../page1/kuai-tpl/kuai-tpl.wxml"></import>
+
+<swiper class="swiperimg"  autoplay="true" interval="2000" circular="true">
+      <swiper-item>
+        <image src="/image/swiper/1.jpg" catchtap="onhuiyuan"/>
+      </swiper-item>
+      <swiper-item catchtap="onPage1">
+        <image src="/image/swiper/2.jpg" />
+      </swiper-item>
+    </swiper>
+<view>
+  <block wx:for="{{alldata}}" wx:for-item="item" wx:for-index="idx">
+    <template is="kuaiTpl" data="{{...item}}" ></template>
+  </block>
+</view>
+
+<view >
+    <image class="bofang" src="/image/tpl/boufang.png" wx:if="{{xs}}" catchtap="onBofang"></image>
+    <image class="bofang" src="/image/tpl/zanting.png" wx:if="{{!xs}}" catchtap="onBofang"></image>
+  </view>

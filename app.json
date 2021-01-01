@@ -1,0 +1,34 @@
+{
+  "pages":[
+    "pages/welcome/welcome",
+    "pages/page1/page1",
+    "pages/page2/page2",
+    "pages/page3/page3",
+    "pages/page1/paihang/paihang",
+    "pages/song/song",
+    "pages/huiyuan/huiyuan"
+  ],
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "borderStyle": "white",
+    "color": "#000",
+    "selectedColor": "#00aa00",
+    "backgroundColor": "#fff",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/page1/page1",
+        "text": "排行榜"
+      },
+      {
+        "pagePath": "pages/page2/page2",
+        "text": "搜索"
+      },
+      {
+        "pagePath": "pages/page3/page3",
+        "text": "收藏"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+/* pages/page1/paihang/paihang.wxss */
+@import "../song-tpl/one-tpl.wxss";
+.mohu{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(20px);
+}
+.top-neirong{
+  position: absolute;
+  top: 150rpx;
+  left: 20rpx;
+  display: flex; 
+  flex-direction: row; 
+}
+.top-PHBpic{
+  width: 250rpx;
+  height: 250rpx;
+  box-shadow: 0 0 20rpx;
+  border-radius: 20rpx;
+}
+.top-xiangxi{
+  margin-left: 30rpx;
+}
+.top-xiangxi-paihangbangname{
+  margin-bottom:10rpx ;
+}
+.top-xiangxi-text{
+  font-size: 50rpx;
+}
+.loge{
+  margin-top:20rpx ;
+  margin-bottom:10rpx ;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.loge-img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+  border-radius: 20rpx;
+}
+.loge-text{
+  font-size: 30rpx;
+  line-height: 40rpx;
+}
+.jianjie{
+  margin-top:20rpx ;
+}
+.jianjie-text{
+  margin-top:20rpx;
+  font-size: 30rpx;
+}
+
+
+.bottom{
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 40rpx 40rpx 0 0;
+  position: absolute;
+  top: 40%;
+  padding-top: 50rpx;
+  padding-left: 50rpx;
+}
+
+.bofang{
+  width: 100rpx;
+  height: 100rpx;
+  position: fixed;
+  top:900rpx;
+  right: 30rpx;
+}

@@ -1,0 +1,9 @@
+<template name="oneTpl">
+  <view class="one">
+    <text class="one-text">{{number}}</text>
+      <scroll-view class="one-scroll" enable-flex='true' scroll-x="true">
+          <text class="scroll-one-text">{{songname}} - </text>
+      </scroll-view>
+    <text class="one-text">{{songer}}</text>
+  </view>
+</template>

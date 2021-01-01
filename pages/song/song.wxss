@@ -1,0 +1,58 @@
+/* pages/song/song.wxss */
+.gepic{
+  position: absolute;
+  top: 100rpx;
+  left: 100rpx;
+  border-radius: 50%;
+  width: 550rpx;
+  height: 550rpx;
+}
+.bofang{
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top:300rpx;
+  left: 300rpx;
+}
+.xinxi{
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  top: 60%;
+}
+.xinxi-zhuanji{
+  margin-bottom: 50rpx;
+}
+.xinxi-geshou{
+  margin-right: 10rpx;
+}
+.xinxi-geshoude{
+  margin-bottom: 60rpx;
+}
+.button-huchu{
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 250rpx;
+  height: 150rpx;
+  background: #f2f2f2;
+  border-radius: 50rpx;
+}
+
+.geci{
+  width: 100%;
+  background: #f2f2f2;
+  display: flex;
+  vertical-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  flex-direction: column; 
+  z-index: 9999;
+}
+.geci-text{
+  font-size: 30rpx;
+}
